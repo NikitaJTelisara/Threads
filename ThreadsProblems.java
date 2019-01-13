@@ -37,7 +37,7 @@ public class ThreadsProblems {
 
 
     ThreadAbstractEx instance1 = new ThreadAbstractEx();
-    instance1.start();
+    instance1.start(); // start() is available to instance1 as ThreadAbstartEx already extends Thread class which has the start implmentation
         while (instance1.count != 5) {
             try {
                 Thread.sleep(250);
